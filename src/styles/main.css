@@ -1,78 +1,109 @@
 body {
     margin: 0;
-  }
+}
+
+h1, h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
   
-  .grid-container {
+.grid-container {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: auto auto auto auto;
     padding: 10px 150px 10px 150px;
-  }
+}
+
+@media only screen and (min-width: 300px) {
+    .grid-container {
+        padding: 20px 50px 10px 50px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .grid-container {
+        padding: 20px 90px 10px 90px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .grid-container {
+        padding: 20px 150px 10px 150px;
+    }
+}
   
-  .grid-header-container {
+.grid-header-container {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #c9d1f5;
-    padding: 10px;
-  }
+    padding: 15px;
+}
   
-  .grid-item {
+.grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
-  }
+}
   
-  .justify-left {
+.justify-left {
     text-align: left
-  }
+}
   
-  .justify-end {
+.justify-end {
     text-align: right;
-  }
+}
   
-  .justify-center {
+.justify-center {
     text-align: center;
-  }
-  
-  .timer {
-    color: #5168e9;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .restart-button {
+}
+    
+.restart-button {
     width: 15em;
     height: 3em;
     color: white;
     background-color: #5168e9;
+    border-radius: 50px;
     border: 0;
-  }
+    transition: all .2s ease-in-out;
+}
+
+.restart-button:hover {
+    background-color: #f33232;
+    transform: scale(1.1);
+}
   
-  .game-status-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(24, 21, 16);
+.game-status-text {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
     font-weight: bold;
-  }
+    font-size: 20px;
+}
   
-  .card {
+.card {
     width: 100%;
     height: 10em;
     background-color: rgb(75, 42, 165);
     color: white;
     font-size: 15px;
-  }
+    transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    background-color: #f33232;
+    transform: scale(1.1);
+}
   
-  .hide-card {
+.hide-card {
     visibility: hidden;
-  }
+}
   
-  .card-front {
+.card-front {
     background-color: #210cdbcc;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  }
+}
   
-  .card-back {
+.card-back {
     font-weight: bold;
-  }
+}
   
-  .react-card-front {
+.react-card-front {
     position: unset !important;
-  }
+}
